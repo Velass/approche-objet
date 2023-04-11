@@ -5,16 +5,13 @@ import entites2.Personne;
 public class TestPersonne {
 
 	public static void main(String[] args) {
-		Personne personne1 = new Personne();
-		personne1.nom = "nomTest";
-		personne1.prenom = "prenomTest";
-		personne1.adressePostal = "adresseTest";
-		
-		Personne personne2 = new Personne();
-		personne2.nom = "nomTest2";
-		personne2.prenom = "prenomTest2";
-		personne2.adressePostal = "adresseTest2";
-
+		Personne personne1 = new Personne("test", "test");
+		System.out.println(personne1);
+		AdressePostale adresse2 = new AdressePostale(11,"test",34,"test");
+		Personne personne2 = new Personne("test", "test", adresse2 );
+		System.out.println(personne2);
+	
 	}
+	
 
 }
