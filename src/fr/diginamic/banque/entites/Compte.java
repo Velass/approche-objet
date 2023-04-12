@@ -22,5 +22,9 @@ public double getSolde() {
 public void setSolde(int solde) {
 	this.solde = solde;
 }
+@Override
+public String toString() {
+	return "Compte [numero=" + numero + ", solde=" + solde + "]";
+}
 }
 
