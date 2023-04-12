@@ -11,6 +11,10 @@ public class TestPersonne {
 		Personne personne2 = new Personne("test", "test", adresse2 );
 		System.out.println(personne2);
 	
+		personne1.changeNom("testnom");
+		System.out.println(personne1.nom);
+		personne1.uppercase();
+		System.out.println(personne2.returnAdresse());
 	}
 	
 

@@ -18,4 +18,29 @@ public class Personne {
 	prenom = lePrenom;
 	adresse = ladressePostal ;
 	}
+	
+	public void uppercase() {
+		System.out.println(nom.toUpperCase()+ " "+prenom);
+	}
+	
+	public void changeNom(String leNom ) {
+		 nom =  leNom;
+	}
+	public void changePrenom(String lePrenom ) {
+		prenom = lePrenom;
+	}
+	public void changeAdresse(AdressePostale ladressePostal ) {
+		adresse = ladressePostal;
+	}
+	
+	public String returnNom() {
+		 return  nom;
+	}
+	public String returnPrenom() {
+		 return  prenom;
+	}
+	public AdressePostale returnAdresse() {
+		 return  adresse;
+	}
+
 }
