@@ -1,15 +1,15 @@
 package entites2;
 
-public class Ville implements Comparable<Ville> {
+public class VilleNom implements Comparable<VilleNom> {
 	private String nom;
 	private int nbHabitants;
 
-	public Ville(String nom, int nbHabitants) {
+	public VilleNom(String nom, int nbHabitants) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
 	}
 
-	public int compareTo(Ville autre) {
+	public int compareTo(VilleNom autre) {
 		int result = this.nom.compareTo(autre.getNom());
 		return result;
 	}
