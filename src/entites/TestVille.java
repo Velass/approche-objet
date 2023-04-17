@@ -3,20 +3,21 @@ package entites;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import entites2.VilleNbrPersonne;
-import entites2.VilleNom;
+import entites2.Ville;
+import entites2.VilleComparator;
+
 
 public class TestVille {
 
 	public static void main(String[] args) {
-		VilleNbrPersonne ville1 = new VilleNbrPersonne("test4", 10000);
-		VilleNbrPersonne ville2 = new VilleNbrPersonne("test3", 8000);
-		VilleNbrPersonne ville3 = new VilleNbrPersonne("test2", 150000);
-		VilleNbrPersonne ville4 = new VilleNbrPersonne("test1", 500);
+		Ville ville1 = new Ville("test4", 10000);
+		Ville ville2 = new Ville("test3", 8000);
+		Ville ville3 = new Ville("test2", 150000);
+		Ville ville4 = new Ville("test1", 500);
 
-		ArrayList<VilleNbrPersonne> liste = new ArrayList<VilleNbrPersonne>();
+		ArrayList<Ville> liste = new ArrayList<Ville>();
 		Collections.addAll(liste, ville1, ville2, ville3, ville4);
-		Collections.sort(liste);
+		Collections.sort(liste, new VilleComparator());
 		System.out.println(liste);
 		
 	}
