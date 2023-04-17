@@ -3,17 +3,18 @@ package entites;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import entites2.VilleNbrPersonne;
 import entites2.VilleNom;
 
 public class TestVille {
 
 	public static void main(String[] args) {
-		VilleNom ville1 = new VilleNom("test4", 10000);
-		VilleNom ville2 = new VilleNom("test3", 8000);
-		VilleNom ville3 = new VilleNom("test2", 150000);
-		VilleNom ville4 = new VilleNom("test1", 500);
+		VilleNbrPersonne ville1 = new VilleNbrPersonne("test4", 10000);
+		VilleNbrPersonne ville2 = new VilleNbrPersonne("test3", 8000);
+		VilleNbrPersonne ville3 = new VilleNbrPersonne("test2", 150000);
+		VilleNbrPersonne ville4 = new VilleNbrPersonne("test1", 500);
 
-		ArrayList<VilleNom> liste = new ArrayList<VilleNom>();
+		ArrayList<VilleNbrPersonne> liste = new ArrayList<VilleNbrPersonne>();
 		Collections.addAll(liste, ville1, ville2, ville3, ville4);
 		Collections.sort(liste);
 		System.out.println(liste);
