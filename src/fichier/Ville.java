@@ -14,4 +14,10 @@ public class Ville {
 		this.popTotal = popTotal;
 	}
 
+	@Override
+	public String toString() {
+		return "Ville [nom=" + nom + ", codedpt=" + codedpt + ", nomRegion=" + nomRegion + ", popTotal=" + popTotal
+				+ "]";
+	}
+
 }
