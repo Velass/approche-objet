@@ -1,11 +1,18 @@
 package entites2;
 
-import java.util.Comparator;
 
 public class Ville implements Comparable<Ville> {
 	private String nom;
 	private int nbHabitants;
-
+	
+	public boolean equals(Object object) {
+	       if(!(object instanceof Ville)) {
+	    	   return false;
+	       }
+	       Ville other = (Ville) object;
+	       return nom != null && nom.equals(other.getNom()) &&  nbHabitants == (other.getNbHabitants());
+	       
+	}
 	public Ville(String nom, int nbHabitants) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
