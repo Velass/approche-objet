@@ -46,7 +46,7 @@ public class Ville2 {
 		}
 		@Override
 		public String toString() {
-			return "Ville2 [nom=" + nom + ", nbHabitants=" + nbHabitants + ", continent=" + continent + "]";
+			return "Ville2 [nom=" + nom + ", nbHabitants=" + nbHabitants + ", continent=" + continent.getLibelle() + "]";
 		}
 
 	
