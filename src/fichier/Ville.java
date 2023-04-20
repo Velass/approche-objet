@@ -5,6 +5,7 @@ public class Ville {
 	int codedpt;
 	String nomRegion;
 	int popTotal;
+	
 
 	public Ville(String nom, int codedpt, String nomRegion, int popTotal) {
 
