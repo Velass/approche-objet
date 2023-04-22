@@ -2,12 +2,18 @@ package fr.diginamic.maison;
 
 public abstract class Piece  {
 	private double superficie;
-	private int etage;
+	private int etage = 0;
 
 	public Piece(double superficie, int etage) {
-		this.superficie = superficie;
-		this.etage = etage;
+		if(superficie < 0 || etage < 0) {
+			System.out.println("veuiller mettre une donnée valide");
+		}else {
+			this.superficie = superficie;
+			this.etage = etage;
+		}
+
 	}
+	
 
 	public double getSuperficie() {
 		return superficie;
